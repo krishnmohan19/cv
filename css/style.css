@@ -1,116 +1,120 @@
-
-body
-{
-    margin: 0px;
+body{
     text-align: center;
     font-family: 'Merriweather', serif;
     color:#40514E;
 }
-p{
-    line-height: 2;
-}
-hr{
-    border:dotted #EAF6F6 6px;
-    width:4%;
-    border-top: none;
-    margin: 100px auto;   
-}
-h1
-{
+h1{
+    font-family:'Sacramento', cursive;
     font-size: 5rem;
-    margin-top: 50px auto 0 auto;
     color:#66BFBF;
-    font-family: 'Sacramento', cursive;
-    
-    
+    margin:60px auto 0 auto;
 }
 h2{
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     color:#66BFBF;
-    font-weight: normal;
-    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
 }
 h3{
     font-family: 'Montserrat', sans-serif;
     color:  #11999E;
 }
-a{
+p{
+    line-height: 2;
+    
+}
+hr{
+    width:4%;
+    margin: 100px auto;
+    border: dotted #EAF6F6 6px;
+    border-top: none;
+}
+.footer-link{
+    margin: 10px 20px;
     color:  #11999E;
-    margin:10px 20px;
     text-decoration: none;
 }
-a:hover{
+.footer-link:hover{
     color:#EAF6F6;
 }
-.top-container
-{
-    background-color: #E4F9F5; 
-    position:relative; 
-    padding-top: 100px;
-    
-    
+.main > practiceLink:hover{
+    color: #11999E;
 }
+
+/* Top-container */
+.Top-container{
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 70px;
+
+}
+.pro{
+    text-decoration: underline;
+}
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+.bottom-cloud{
+    position: absolute;
+    left: 300px;
+    bottom: 340px;
+    padding: 20px;
+}
+.boy-image{
+    height: 300px;
+    width:450px;
+    border-radius: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* middle-container */
+
 .middle-container{
-    padding-top: 100px;
+    margin-top: 100px;
 }
-
-.profilepic{border-radius: 100%;
-    height:300px;
-    width:300px;}
-
-
+.profilepic{
+    height: 400px;
+    width: 300px;
+    border-radius: 100%;
+    padding-bottom: 20px;
+}
+.intro{
+    width: 30%;
+    margin: 0 auto 0 auto;
+}
 .computer{
-    height:200px;width:25%;
+    height:200px ;
+    width: 20%;
     float: left;
-    margin-right: 30px;}
-.cricket{
-    height:200px;width:25%;
-    float: right;
-    margin-right: 30px;}
+}
 .skill-row{
     width: 50%;
     margin: 100px auto 100px auto;
     text-align: left;
-    }
-
-
-.pro{
-    text-decoration: underline;
 }
-.intro{
-    width:30%;
-    margin:0 auto 0 auto;
+.cricket{
+    height: 200px;
+    width: 30%;
+    float: right;
+    margin-right: 30px;
 }
-.bottom-cloud
-{
-    position: absolute;
-    left:300px;
-    bottom:250px;
-      
-}
-.top-cloud
-{
-    
-  position: absolute;
-  right:300px ;
-  top:40px;
-}
-
-}
-.contact-me
-{
-    margin-bottom: 90px;
-}
-
-.bottom-container{
-    padding: 50px 0 20px;
-    margin-top: 80px;
-    background-color: #66BFBF;
+.contact-me{
+    margin-bottom: px;
 }
 .contact-paragraph{
-   width: 40%;
-   margin:40px auto 60px;
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+
+/* bottom container */
+.bottom-container{
+    padding: 50px 0px 20px;
+    margin-top: 80px;
+    background-color: #66BFBF;
 }
 .copy-right{
     color: #EAF6F6;
@@ -133,7 +137,6 @@ a:hover{
     text-decoration: none;
     
   }
-  
   .btn:hover {
     background: #30E3CB;
     background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
@@ -144,3 +147,59 @@ a:hover{
     text-decoration: none;
   }
 
+
+@media(max-width:1250px){
+    .boy-image{
+        height:250px;
+        width: 400px;
+        
+    }
+    .bottom-cloud{
+        bottom: 290px;
+    }
+    
+}
+@media(max-width:1100px){
+    .skill-row{
+        width: 80%;
+
+    }
+    .contact-paragraph{
+        width: 60%;
+        margin:20px auto;
+    }
+   
+}
+@media(max-width:681px){
+    p{
+        margin-top: 70px;
+    }
+    .copy-right{
+        margin: 30px;
+    }
+    .top-cloud{
+        right: 200px;
+        top: 40px;
+    }
+    .bottom-cloud{
+        left: 200px;
+        bottom: 300px;
+    }
+    h3{
+        padding: 50px  20px;
+        text-align: center;
+    }
+    .computer{
+        width: 31%;
+    }
+    .cricket{
+        width: 40%;
+    }
+    hr{
+        margin: 50px auto;
+    }
+    
+    .intro{
+        width: 50%;
+    }
+}
